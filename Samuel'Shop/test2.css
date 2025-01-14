@@ -1,0 +1,221 @@
+#carousel1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container1 img {
+    width: 100%;
+    height: auto;
+}.section-cards1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+  background-image: url(Degrader/img2.png);
+}/* Styles existants pour .card1 */
+.card1 {
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+/* Styles existants pour le survol de .card1 */
+.card1:hover {
+  transform: scale(1.2);
+}
+
+/* Styles existants pour .text-section */
+.text-section {
+  margin-top: 250px;
+  text-align: center;
+}
+
+/* Styles existants pour les images de fond */
+.carte1, .carte2, .carte3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Image de fond pour .carte1 */
+.carte1 {
+  background-image: url('img/img9.jpg');
+}
+
+/* Image de fond pour .carte2 - Agrandie par défaut */
+.carte2 {
+  background-image: url('img/img6.jpg');
+  transform: scale(1.2); /* Agrandissement par défaut */
+  z-index: 1; /* Assurez-vous qu'elle se trouve au-dessus des autres cartes */
+}
+
+/* Image de fond pour .carte3 */
+.carte3 {
+  background-image: url('img/img5.jpg');
+}
+
+/* Styles existants pour button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* Nouveau code pour le rétrécissement et l'agrandissement */
+.section-cards1:hover .card1:not(:hover) {
+  transform: scale(1); /* Rétrécit les autres cartes au survol */
+}
+
+.section-cards1:hover .card1:hover {
+  transform: scale(1.2); /* Agrandit la carte survolée */
+}
+
+.section-cards1:not(:hover) .carte2 {
+  transform: scale(1.2); /* Agrandit la carte 2 lorsque le survol des autres cartes s'arrête */
+}
+
+
+
+.text-section {
+  position: relative;
+  z-index: 1; /* Assurez-vous que le texte apparaît au-dessus de l'ombre */
+  color: white; /* Changez la couleur du texte en blanc pour une meilleure visibilité */
+  /* Autres styles de .text-section */
+}
+
+
+
+
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+   
+  justify-content: space-around;
+  padding: 80px;
+  }
+  
+  .about-us-title {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .about-us-image {
+    width: 50%; /* Ajustez la taille de l'image selon vos besoins */
+    margin-right: 20px;
+  }
+  
+  .about-us-text {
+    width: 50%;
+    /* Ajustez le style du texte selon vos préférences */
+  }
+  
+  
+  .nos-partenaires-section {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .nos-partenaires-title {
+    margin-bottom: 20px;
+  }
+  
+  .partenaires-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .partenaire {
+    width: 200px; /* Ajustez selon la taille souhaitée */
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .partenaire img {
+    width: 100%; /* Ajustez selon la taille souhaitée */
+    height: auto;
+  }
+  
+
+  .nos-contacts-section {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .nos-contacts-title {
+    margin-bottom: 20px;
+  }
+  
+  .contacts-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-item {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .contact-item img {
+    width: 50px; /* Ajustez selon la taille souhaitée */
+    height: auto;
+    margin-bottom: 5px;
+  }
+  
+  .contact-item p {
+    margin: 0;
+  }
+  
+
+  .site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content h3 {
+    margin-top: 0;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    
+  }
+  
+  .social-icons{
+    margin-top: 10px;
+  }
+

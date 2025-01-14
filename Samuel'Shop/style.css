@@ -1,0 +1,305 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image: url(Degrader/img2.png);
+}
+
+/* Styles généraux pour les éléments flex */
+nav,
+.logo,
+nav ul,
+.form,
+.form div,
+form div,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styles spécifiques au menu de navigation */
+nav {
+    background: #f1f1f1;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    gap: 30px;
+}
+
+.form a,
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+nav ul li:first-child a {
+    color: #ee5057;
+    border-bottom: solid 1px #ee5057;
+}
+
+.form a,
+.form p {
+    color: #ee5057;
+}
+
+/* Styles pour la première section et la réservation */
+section:first-child,
+.reservation {
+    display: grid;
+    place-items: center;
+}
+
+.reservation {
+    width: 100%;
+    min-height: 50vh;
+    background: no-repeat url(img/bg-img.jpg);
+    background-size: cover;
+}
+
+.reservation .form {
+    background: #f1f1f1;
+    width: 50%;
+    min-width: 265px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.help,
+form {
+    width: 90%;
+}
+
+.form div {
+    padding: 10px;
+}
+
+.form div input[type="submit"],
+.form div:first-child input {
+    min-width: 215px;
+}
+
+.form div select {
+    min-width: 115px;
+}
+
+::placeholder,
+select,
+input {
+    color: #ee5057;
+    font-family: 'FontAwesome', Arial, Helvetica, sans-serif;
+}
+
+input {
+    width: 30%;
+}
+
+select {
+    width: 20%;
+}
+
+select,
+input {
+    height: 50px;
+}
+
+input[type="submit"] {
+    border: #ee5057;
+    background: #ee5057;
+    color: #f1f1f1;
+}
+
+/* Styles pour la première section */
+section:first-child {
+    background: #ee5057;
+    color: #f1f1f1;
+    min-height: 30vh;
+}
+
+section:first-child button {
+    background: #ee5057;
+    color: #000000;
+    border: solid 1px #f1f1f1;
+    text-decoration: none;
+    padding: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Styles pour la deuxième et troisième section */
+section:nth-child(2),
+section:nth-child(3) {
+    background: #FFDFDB;
+    color: #ee5057;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles pour les éléments à l'intérieur de la deuxième section */
+section:nth-child(2) div {
+    width: 20%;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+section:nth-child(2) div h2 {
+    font-size: 3em;
+    padding: 20px;
+}
+
+section:nth-child(2) div h3 {
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+section:nth-child(2) div p {
+    padding: 20px;
+}
+
+section:nth-child(2) div a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ee5057;
+    padding: 20px;
+    font-weight: 800;
+}
+
+/* Styles pour la troisième section */
+section:nth-child(3) {
+    background: #F8D7D7;
+    color: #000;
+}
+
+/* Styles pour le carrousel */
+#carrousel {
+    width: 100%; /* Fait en sorte que le carrousel occupe toute la largeur */
+    overflow: hidden; /* Masque les autres photos pour n'en afficher qu'une seule */
+    position: relative;
+}
+
+#carrousel #container {
+    display: flex;
+    justify-content: space-between;
+    width: auto; /* Pour que le conteneur du carrousel s'ajuste automatiquement à la largeur du carrousel */
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.card,
+.card img {
+    width: 100%; /* Fait en sorte que les cartes et les images du carrousel occupent toute la largeur */
+}
+
+.cardContent {
+    margin: 10px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    color: #f1f1f1;
+    background: #ee5057;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cardContent p {
+    margin: 10px;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    color: #f1f1f1;
+    font-size: 1.5em;
+    padding: 2px;
+    background: #bebebeac;
+    cursor: pointer;
+}
+
+.btn#g {
+    right: 0;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.cardPlaces {
+    width: 265px;
+    margin-left: 10px;
+}
+
+.cardContinent {
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.continent {
+    margin-bottom: 10px;
+    height: 70px;
+    background: #cdcdcd;
+    display: flex;
+}
+
+.continent img {
+    height: 70px;
+}
+
+.continent h3 {
+    margin: auto;
+    margin-top: 25px;
+}
+
+.headCard {
+    color: #f1f1f1;
+    background: #ee5057;
+    padding: 5px;
+}
+
+/* Styles pour le footer */
+footer {
+    background: #ee5057;
+    min-height: 80px;
+    width: 100%;
+    color: #f1f1f1;
+}
+
+footer p {
+    margin: auto;
+}
+ 
+
+.masques{
+    background-color: #ffffff;
+}
+
+
+/* Media query pour les appareils mobiles (largeur maximale de 600 pixels) */
+@media screen and (max-width: 600px) {
+    section:nth-child(3) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cardPlaces {
+        margin: 20px 0px;
+    }
+}

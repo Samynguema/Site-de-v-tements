@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(Degrader/img2.png);
+  }
+  
+  .card {
+    width: 500px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* Coins arrondis */
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Orientation verticale */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .login-container {
+    width: 100%; /* Pleine largeur */
+    max-width: 340px; /* Largeur maximale pour les champs de saisie */
+    margin-left: 20px;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"],
+  .login-container input[type="submit"] {
+    width: 100%; /* Pleine largeur */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Bordures arrondies */
+    box-sizing: border-box;
+  }
+  
+  .login-container input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    margin-left: 60px;
+  }
+  
+  .login-container input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .conn{
+    margin-right: 40px;
+    
+  }
+
+  .lien{
+    color: #337ab7;
+    margin-top: 40px;
+    margin-right: 120px;
+  }
+
+  .lien:hover {
+    text-decoration: underline;
+    
+  }
+  
